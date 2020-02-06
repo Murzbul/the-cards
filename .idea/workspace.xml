@@ -2,107 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5635a535-9cda-4c34-ac0b-5a0a150b87b2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Console/Commands/AssignRoleToUserCommand.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Console/Commands/RoleCreateCommand.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Console/Commands/Start.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Console/Commands/UserCreateCommand.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Api/Handlers/AuthHandler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Api/Handlers/FileHandler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Api/Handlers/RoleHandler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Api/Requests/Auth/AuthLoginRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Api/Requests/Files/FileUploadRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Api/Requests/Roles/RoleCreateRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Api/Requests/Roles/RoleListRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Api/Requests/Roles/RoleShowRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Api/Requests/Roles/RoleUpdateRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Api/Requests/Users/UserCreateRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Api/Requests/Users/UserListRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Api/Requests/Users/UserShowRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Api/Requests/Users/UserUpdateRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/Authorization.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Transformers/Auths/AuthLoginTransformer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Transformers/Auths/UserTransformer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Transformers/Defaults/TimestampableTransformer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Transformers/Roles/RoleTransformer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Infrastructure/Doctrine/Criteria/Roles/RoleFilter.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Infrastructure/Doctrine/Criteria/Roles/RoleSorting.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Infrastructure/Doctrine/Criteria/Users/UserFilter.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Infrastructure/Doctrine/Criteria/Users/UserSorting.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Infrastructure/Doctrine/Mappings/RoleMapping.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Infrastructure/Doctrine/Mappings/UserMapping.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Infrastructure/Doctrine/Repositories/DoctrineRoleRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Infrastructure/Doctrine/Repositories/DoctrineUserRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/jwt.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/Auth/AuthData.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/Auth/Contracts/IAuth.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/Auth/Contracts/IToken.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/Auth/Token.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/Contracts/Timestampable.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/Doctrine/Types/UuidType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/Security/Roles.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/Traits/Timestampable.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/Validators/UuidValidator.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proxies/__CG__DigichangeEntitiesItem.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proxies/__CG__DigichangeEntitiesRole.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proxies/__CG__DigichangeEntitiesUser.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entities/Role.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entities/User.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Payloads/Auth/AuthLoginPayload.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Payloads/Files/FilesPayload.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Payloads/Roles/RoleCreatePayload.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Payloads/Roles/RoleListPayload.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Payloads/Roles/RolePayload.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Payloads/Roles/RoleShowPayload.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Payloads/Roles/RoleUpdatePayload.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Payloads/Users/UserCreatePayload.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Payloads/Users/UserListPayload.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Payloads/Users/UserPayload.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Payloads/Users/UserShowPayload.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Payloads/Users/UserUpdatePayload.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repositories/RoleRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repositories/UserRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Services/Auth/AuthService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Services/Files/FileService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Services/Roles/RoleService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Services/Users/UserService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/laravel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Console/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Api/Handlers/Items/ItemHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Api/Handlers/ItemHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Api/Requests/Items/ItemShowRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Api/Requests/Items/ItemShowRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Api/Requests/Items/ItemUpdateRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Api/Requests/Items/ItemUpdateRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Infrastructure/Doctrine/Mappings/ItemMapping.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Infrastructure/Doctrine/Mappings/ItemMapping.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Infrastructure/Doctrine/Repositories/DoctrineReadRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Infrastructure/Doctrine/Repositories/DoctrineReadRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/doctrine.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/doctrine.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entities/Item.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/Item.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Payloads/Items/ItemShowPayload.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Payloads/Items/ItemShowPayload.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Payloads/Items/ItemUpdatePayload.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Payloads/Items/ItemUpdatePayload.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repositories/ReadRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repositories/ReadRepository.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <executable />
@@ -357,7 +265,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../the-blog" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -407,6 +315,7 @@
       <option name="presentableId" value="Default" />
       <updated>1580866369746</updated>
       <workItem from="1580866371274" duration="6279000" />
+      <workItem from="1580994616546" duration="139000" />
     </task>
     <servers />
   </component>
