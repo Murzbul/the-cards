@@ -2,10 +2,9 @@
 
 namespace Digichange\Entities;
 
-use Digichange\Payloads\Items\ItemUpdatePayload;
 use Ramsey\Uuid\Uuid;
 
-class Item
+class Game
 {
     /** @var Uuid */
     private $id;
@@ -26,10 +25,5 @@ class Item
     public function getName(): string
     {
         return $this->name;
-    }
-
-    public function update(ItemUpdatePayload $payload)
-    {
-        $this->name = $payload->name();
     }
 }

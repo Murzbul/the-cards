@@ -179,10 +179,10 @@ class Item extends \Digichange\Entities\Item implements \Doctrine\ORM\Proxy\Prox
     /**
      * {@inheritDoc}
      */
-    public function getId(): int
+    public function getId(): string
     {
         if ($this->__isInitialized__ === false) {
-            return (int)  parent::getId();
+            return  parent::getId();
         }
 
 

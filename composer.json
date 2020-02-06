@@ -77,7 +77,7 @@
     "autoload": {
         "psr-4": {
             "App\\": "app/",
-            "Digichange\\": "src/",
+            "CardsGame\\": "src/",
             "Lib\\": "lib/"
         },
         "classmap": [
@@ -120,12 +120,13 @@
             "php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
             "php artisan key:generate",
             "php artisan clear-compiled",
+            "php artisan config:cache",
             "php artisan vendor:publish --tag=\"assets\"",
             "php artisan doctrine:clear:metadata:cache",
             "php artisan doctrine:generate:proxies",
             "php artisan migrate",
             "php artisan doctrine:schema:update --force",
-            "php artisan jwt:secret"
+            "php artisan jwt:secret --force"
         ],
         "stan": "php -d memory_limit=500M ./vendor/bin/phpstan analyse -l 3 -c phpstan.neon src app config resources tests",
         "unit": "./vendor/bin/phpunit",

@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5635a535-9cda-4c34-ac0b-5a0a150b87b2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/laravel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxies/__CG__DigichangeEntitiesItem.php" beforeDir="false" afterPath="$PROJECT_DIR$/proxies/__CG__DigichangeEntitiesItem.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -269,16 +273,16 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/lib/Helpers" />
-      <recent name="$PROJECT_DIR$/app/Http/Api" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/app/Http/Transformers" />
       <recent name="$PROJECT_DIR$/src/Repositories" />
       <recent name="$PROJECT_DIR$/app/Console" />
-      <recent name="$PROJECT_DIR$/app/Http/Middleware" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib/Helpers" />
+      <recent name="$PROJECT_DIR$/app/Http/Api" />
     </key>
   </component>
   <component name="RunManager">
@@ -315,7 +319,7 @@
       <option name="presentableId" value="Default" />
       <updated>1580866369746</updated>
       <workItem from="1580866371274" duration="6279000" />
-      <workItem from="1580994616546" duration="139000" />
+      <workItem from="1580994616546" duration="7310000" />
     </task>
     <servers />
   </component>
@@ -327,14 +331,19 @@
       <screen x="0" y="26" width="1440" height="806" />
     </state>
     <state x="315" y="93" width="812" height="680" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.26.1440.806@0.26.1440.806" timestamp="1580901718433" />
+    <state x="286" y="27" width="1154" height="1023" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1581022996915">
+      <screen x="67" y="27" width="1613" height="1023" />
+    </state>
+    <state x="286" y="27" width="1154" height="1023" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/67.27.1613.1023@67.27.1613.1023" timestamp="1581022996915" />
     <state x="453" y="189" width="536" height="487" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1580954416634">
       <screen x="0" y="26" width="1440" height="806" />
     </state>
     <state x="453" y="189" width="536" height="487" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.26.1440.806@0.26.1440.806" timestamp="1580954416634" />
-    <state x="503" y="189" width="436" height="487" key="FileChooserDialogImpl" timestamp="1580955375358">
-      <screen x="0" y="26" width="1440" height="806" />
+    <state x="630" y="234" width="436" height="487" key="FileChooserDialogImpl" timestamp="1580999563093">
+      <screen x="67" y="27" width="1613" height="1023" />
     </state>
     <state x="503" y="189" width="436" height="487" key="FileChooserDialogImpl/0.26.1440.806@0.26.1440.806" timestamp="1580955375358" />
+    <state x="630" y="234" key="FileChooserDialogImpl/67.27.1613.1023@67.27.1613.1023" timestamp="1580999563093" />
     <state x="622" y="329" width="362" height="232" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1580954451262">
       <screen x="0" y="26" width="1440" height="806" />
     </state>
@@ -343,9 +352,14 @@
       <screen x="0" y="26" width="1440" height="806" />
     </state>
     <state x="439" y="74" width="564" height="718" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.26.1440.806@0.26.1440.806" timestamp="1580954480172" />
-    <state x="383" y="153" width="672" height="763" key="search.everywhere.popup" timestamp="1580955312831">
-      <screen x="0" y="26" width="1440" height="806" />
+    <state x="496" y="188" width="753" height="969" key="search.everywhere.popup" timestamp="1581011705321">
+      <screen x="67" y="27" width="1613" height="1023" />
     </state>
     <state x="383" y="153" width="672" height="763" key="search.everywhere.popup/0.26.1440.806@0.26.1440.806" timestamp="1580955312831" />
+    <state x="496" y="188" width="753" height="969" key="search.everywhere.popup/67.27.1613.1023@67.27.1613.1023" timestamp="1581011705321" />
+    <state x="598" y="444" width="540" height="186" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1581022998446">
+      <screen x="67" y="27" width="1613" height="1023" />
+    </state>
+    <state x="598" y="444" width="540" height="186" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/67.27.1613.1023@67.27.1613.1023" timestamp="1581022998446" />
   </component>
 </project>
