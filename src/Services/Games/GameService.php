@@ -9,19 +9,16 @@ use CardsGame\Models\Monster;
 use CardsGame\Models\Player;
 use CardsGame\Models\ShieldPoint;
 use CardsGame\Payloads\Games\GameCreatePayload;
-use CardsGame\Payloads\Roles\RoleCreatePayload;
-use CardsGame\Payloads\Roles\RoleShowPayload;
-use CardsGame\Payloads\Roles\RoleUpdatePayload;
-use CardsGame\Repositories\PersistRepository;
-use CardsGame\Repositories\RoleRepository;
-use Doctrine\ORM\Tools\Pagination\Paginator;
-use Lib\Criteria\Contracts\Criteria;
+use CardsGame\Repositories\GameRepository;
 
 class GameService
 {
+    /** @var GameRepository */
+    private $repository;
+
     public function __construct(GameRepository $repository)
     {
-
+        $this->repository = $repository;
     }
 
     public function create(GameCreatePayload $payload): Game
@@ -37,6 +34,13 @@ class GameService
 
         $game = new Game($player1, $player2, $turns, $playSolo);
 
+        $this->repository->save($game);
+
         return $game;
+    }
+
+    public function show(): Game
+    {
+        return $this->repository->getCurrentGame();
     }
 }

@@ -27,7 +27,7 @@ if (! function_exists('random_number')) {
      */
     function random_number(int $min = 1, int $max = 10): int
     {
-        return rand ( $min, $max );
+        return rand($min, $max);
     }
 }
 

@@ -2,66 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5635a535-9cda-4c34-ac0b-5a0a150b87b2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Abstracts/Entity.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Api/Handlers/AuthHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Api/Handlers/AuthHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Api/Handlers/FileHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Api/Handlers/FileHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Api/Handlers/ItemHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Api/Handlers/GameHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Api/Handlers/RoleHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Api/Handlers/RoleHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Api/Requests/Auth/AuthLoginRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Api/Requests/Auth/AuthLoginRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Api/Requests/Files/FileUploadRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Api/Requests/Files/FileUploadRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Api/Requests/Items/ItemCreateRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Api/Requests/Games/GameCreateRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Api/Requests/Items/ItemListRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Api/Requests/Games/GameListRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Api/Requests/Items/ItemShowRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Api/Requests/Games/GameShowRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Api/Requests/Items/ItemUpdateRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Api/Requests/Games/GameUpdateRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Api/Requests/Roles/RoleCreateRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Api/Requests/Roles/RoleCreateRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Api/Requests/Roles/RoleShowRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Api/Requests/Roles/RoleShowRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Api/Requests/Roles/RoleUpdateRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Api/Requests/Roles/RoleUpdateRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Api/Requests/Users/UserCreateRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Api/Requests/Users/UserCreateRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Api/Requests/Users/UserShowRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Api/Requests/Users/UserShowRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Api/Requests/Users/UserUpdateRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Api/Requests/Users/UserUpdateRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Transformers/Auths/AuthLoginTransformer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Transformers/Auths/AuthLoginTransformer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Transformers/Auths/UserTransformer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Transformers/Auths/UserTransformer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Transformers/Items/ItemTransformer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Transformers/Items/ItemTransformer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Transformers/Roles/RoleTransformer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Transformers/Roles/RoleTransformer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Infrastructure/Doctrine/Repositories/DoctrineItemRepository.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Infrastructure/Doctrine/Repositories/DoctrinePersistRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Infrastructure/Doctrine/Repositories/DoctrinePersistRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Infrastructure/Doctrine/Repositories/DoctrineReadRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Infrastructure/Doctrine/Repositories/DoctrineReadRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Infrastructure/Doctrine/Repositories/DoctrineRoleRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Infrastructure/Doctrine/Repositories/DoctrineRoleRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Infrastructure/Doctrine/Repositories/DoctrineUserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Infrastructure/Doctrine/Repositories/DoctrineUserRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/helpers.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Contracts/Player.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entities/Game.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entities/Role.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/Role.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entities/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Payloads/Auth/AuthLoginPayload.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Payloads/Auth/AuthLoginPayload.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Payloads/Files/FilesPayload.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Payloads/Files/FilesPayload.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Payloads/Items/ItemCreatePayload.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Payloads/Items/ItemListPayload.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Payloads/Items/ItemPayload.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Payloads/Items/ItemShowPayload.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Payloads/Items/ItemUpdatePayload.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Payloads/Roles/RoleCreatePayload.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Payloads/Roles/RoleCreatePayload.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Payloads/Roles/RoleListPayload.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Payloads/Roles/RoleListPayload.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Payloads/Roles/RolePayload.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Payloads/Roles/RolePayload.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Payloads/Roles/RoleShowPayload.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Payloads/Roles/RoleShowPayload.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Payloads/Roles/RoleUpdatePayload.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Payloads/Roles/RoleUpdatePayload.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Payloads/Users/UserCreatePayload.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Payloads/Users/UserCreatePayload.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Payloads/Users/UserListPayload.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Payloads/Users/UserListPayload.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Payloads/Users/UserPayload.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Payloads/Users/UserPayload.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Payloads/Users/UserShowPayload.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Payloads/Users/UserShowPayload.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Payloads/Users/UserUpdatePayload.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Payloads/Users/UserUpdatePayload.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repositories/ItemRepository.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repositories/PersistRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repositories/PersistRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repositories/ReadRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repositories/ReadRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repositories/RoleRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repositories/RoleRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repositories/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repositories/UserRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Auth/AuthService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Auth/AuthService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Files/FileService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Files/FileService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Items/ItemService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Roles/RoleService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Roles/RoleService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Users/UserService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Users/UserService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Api/Handlers/GameHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Api/Handlers/GameHandler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Transformers/Items/ItemTransformer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Transformers/Games/GameTransformer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Infrastructure/Session/Repositories/SessionGameRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Infrastructure/Session/Repositories/SessionGameRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Abstracts/Entity.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Abstracts/Entity.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repositories/GameRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repositories/GameRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/Games/GameService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Games/GameService.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -327,18 +275,18 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/Abstracts" />
-      <recent name="$PROJECT_DIR$/src/Models" />
-      <recent name="$PROJECT_DIR$/lib/Helpers" />
-      <recent name="$PROJECT_DIR$/app/Http/Api" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/Infrastructure/Session/Repositories" />
       <recent name="$PROJECT_DIR$/src/Repositories" />
       <recent name="$PROJECT_DIR$/src/Factories" />
       <recent name="$PROJECT_DIR$/src/Models" />
       <recent name="$PROJECT_DIR$/src/ValueObjects" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Abstracts" />
+      <recent name="$PROJECT_DIR$/src/Models" />
+      <recent name="$PROJECT_DIR$/lib/Helpers" />
+      <recent name="$PROJECT_DIR$/app/Http/Api" />
     </key>
   </component>
   <component name="RunManager">
@@ -396,15 +344,16 @@
       <screen x="0" y="26" width="1440" height="806" />
     </state>
     <state x="528" y="150" width="386" height="565" key="#com.intellij.ide.util.MemberChooser/0.26.1440.806@0.26.1440.806" timestamp="1581076288658" />
-    <state x="196" y="26" width="488" height="806" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1581075059643">
-      <screen x="0" y="26" width="1440" height="806" />
+    <state x="286" y="27" width="488" height="806" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1581101253071">
+      <screen x="67" y="27" width="1613" height="1023" />
     </state>
     <state x="196" y="26" width="488" height="806" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.26.1440.806@0.26.1440.806" timestamp="1581075059643" />
-    <state x="286" y="27" width="1154" height="1023" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/67.27.1613.1023@67.27.1613.1023" timestamp="1581022996915" />
-    <state x="453" y="189" width="536" height="487" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1581075136855">
-      <screen x="0" y="26" width="1440" height="806" />
+    <state x="286" y="27" width="1154" height="1023" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/67.27.1613.1023@67.27.1613.1023" timestamp="1581101253071" />
+    <state x="574" y="234" width="536" height="487" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1581101998115">
+      <screen x="67" y="27" width="1613" height="1023" />
     </state>
     <state x="453" y="189" width="536" height="487" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.26.1440.806@0.26.1440.806" timestamp="1581075136855" />
+    <state x="574" y="234" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/67.27.1613.1023@67.27.1613.1023" timestamp="1581101998115" />
     <state x="630" y="234" width="436" height="487" key="FileChooserDialogImpl" timestamp="1580999563093">
       <screen x="67" y="27" width="1613" height="1023" />
     </state>

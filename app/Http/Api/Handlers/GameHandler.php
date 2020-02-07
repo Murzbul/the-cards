@@ -3,11 +3,8 @@
 namespace App\Http\Api\Handlers;
 
 use App\Http\Api\Requests\Games\GameCreateRequest;
-use App\Http\Api\Requests\Games\GameListRequest;
-use App\Http\Api\Requests\Games\GameShowRequest;
-use App\Http\Api\Requests\Games\GameUpdateRequest;
 use App\Http\Responders\MetadataResponder as Responder;
-use App\Http\Transformers\Items\ItemTransformer;
+use App\Http\Transformers\Games\GameTransformer;
 use CardsGame\Services\Games\GameService;
 
 class GameHandler extends Handler
@@ -27,35 +24,15 @@ class GameHandler extends Handler
     {
         $request->validate();
 
-        $item = $this->service->create($request);
+        $game = $this->service->create($request);
 
-        return $this->responder->success($item, new ItemTransformer())->respond();
+        return $this->responder->success($game, new GameTransformer())->respond();
     }
 
-    public function list(GameListRequest $request)
+    public function show()
     {
-        $request->validate();
+        $game = $this->service->show();
 
-        $items = $this->service->list($request);
-
-        return $this->responder->success($items, new ItemTransformer())->paginator(adapt_paginator($items, $request));
-    }
-
-    public function update(GameUpdateRequest $request)
-    {
-        $request->validate();
-
-        $item = $this->service->update($request);
-
-        return $this->responder->success($item, new ItemTransformer())->respond();
-    }
-
-    public function show(GameShowRequest $request)
-    {
-        $request->validate();
-
-        $item = $this->service->show($request);
-
-        return $this->responder->success($item, new ItemTransformer())->respond();
+        return $this->responder->success($game, new GameTransformer())->respond();
     }
 }

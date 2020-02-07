@@ -1,20 +1,26 @@
 <?php
 
-namespace App\Infrastructure\Doctrine\Repositories;
+namespace App\Infrastructure\Session\Repositories;
 
-use CardsGame\Repositories\GameRepository;
 use CardsGame\Models\Game;
+use CardsGame\Repositories\GameRepository;
+use Illuminate\Support\Facades\Session;
 
 class SessionGameRepository implements GameRepository
 {
+    const CURRENT = 'current';
+
+    public function __construct()
+    {
+    }
 
     public function getCurrentGame(): Game
     {
-        // TODO: Implement getCurrentGame() method.
+        return Session::get(static::CURRENT);
     }
 
-    public function save(): Game
+    public function save(Game $game)
     {
-        // TODO: Implement getCurrentGame() method.
+        Session::put(static::CURRENT, $game);
     }
 }

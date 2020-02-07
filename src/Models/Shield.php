@@ -2,8 +2,8 @@
 
 namespace CardsGame\Models;
 
-use CardsGame\Contracts\Effect;
 use CardsGame\Abstracts\Entity;
+use CardsGame\Contracts\Effect;
 
 class Shield implements Effect
 {
