@@ -1,14 +1,14 @@
 <?php
 
-namespace Digichange\Services\Roles;
+namespace CardsGame\Services\Roles;
 
-use Digichange\Entities\Role;
-use Digichange\Entities\User;
-use Digichange\Payloads\Roles\RoleCreatePayload;
-use Digichange\Payloads\Roles\RoleShowPayload;
-use Digichange\Payloads\Roles\RoleUpdatePayload;
-use Digichange\Repositories\PersistRepository;
-use Digichange\Repositories\RoleRepository;
+use CardsGame\Entities\Role;
+use CardsGame\Entities\User;
+use CardsGame\Payloads\Roles\RoleCreatePayload;
+use CardsGame\Payloads\Roles\RoleShowPayload;
+use CardsGame\Payloads\Roles\RoleUpdatePayload;
+use CardsGame\Repositories\PersistRepository;
+use CardsGame\Repositories\RoleRepository;
 use Doctrine\ORM\Tools\Pagination\Paginator;
 use Lib\Criteria\Contracts\Criteria;
 

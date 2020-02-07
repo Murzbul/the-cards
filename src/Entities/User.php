@@ -1,8 +1,8 @@
 <?php
 
-namespace Digichange\Entities;
+namespace CardsGame\Entities;
 
-use Digichange\Payloads\Users\UserUpdatePayload;
+use CardsGame\Payloads\Users\UserUpdatePayload;
 use Doctrine\Common\Collections\ArrayCollection;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Notifications\Notifiable;

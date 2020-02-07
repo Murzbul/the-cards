@@ -8,7 +8,7 @@ use App\Http\Api\Requests\Roles\RoleShowRequest;
 use App\Http\Api\Requests\Roles\RoleUpdateRequest;
 use App\Http\Responders\MetadataResponder as Responder;
 use App\Http\Transformers\Roles\RoleTransformer;
-use Digichange\Services\Roles\RoleService;
+use CardsGame\Services\Roles\RoleService;
 
 class RoleHandler extends Handler
 {

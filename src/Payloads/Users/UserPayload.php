@@ -1,8 +1,8 @@
 <?php
 
-namespace Digichange\Payloads\Users;
+namespace CardsGame\Payloads\Users;
 
-use Digichange\Entities\User;
+use CardsGame\Entities\User;
 
 interface UserPayload
 {

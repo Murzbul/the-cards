@@ -2,9 +2,9 @@
 
 namespace App\Http\Api\Requests\Roles;
 
-use Digichange\Entities\Role;
-use Digichange\Payloads\Roles\RoleUpdatePayload;
-use Digichange\Repositories\RoleRepository;
+use CardsGame\Entities\Role;
+use CardsGame\Payloads\Roles\RoleUpdatePayload;
+use CardsGame\Repositories\RoleRepository;
 use Illuminate\Http\Request;
 use Lib\Validators\UuidValidator;
 

@@ -3,7 +3,7 @@
 namespace App\Http\Transformers\Auths;
 
 use App\Http\Transformers\Defaults\TimestampableTransformer;
-use Digichange\Entities\User;
+use CardsGame\Entities\User;
 use Flugg\Responder\Transformers\Transformer;
 
 class UserTransformer extends Transformer

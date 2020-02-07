@@ -3,8 +3,8 @@
 namespace App\Infrastructure\Doctrine\Repositories;
 
 use App\Infrastructure\Doctrine\Criteria\Roles\RoleFilter;
-use Digichange\Entities\Role;
-use Digichange\Repositories\RoleRepository;
+use CardsGame\Entities\Role;
+use CardsGame\Repositories\RoleRepository;
 use Doctrine\ORM\Tools\Pagination\Paginator;
 use Lib\Criteria\Contracts\Criteria;
 

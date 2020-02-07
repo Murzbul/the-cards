@@ -3,8 +3,8 @@
 namespace App\Infrastructure\Doctrine\Repositories;
 
 use App\Infrastructure\Doctrine\Criteria\Users\UserFilter;
-use Digichange\Entities\User;
-use Digichange\Repositories\UserRepository;
+use CardsGame\Entities\User;
+use CardsGame\Repositories\UserRepository;
 use Doctrine\ORM\Tools\Pagination\Paginator;
 use Lib\Criteria\Contracts\Criteria;
 

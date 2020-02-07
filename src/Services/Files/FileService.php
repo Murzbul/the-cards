@@ -1,8 +1,8 @@
 <?php
 
-namespace Digichange\Services\Files;
+namespace CardsGame\Services\Files;
 
-use Digichange\Payloads\Files\FilesPayload;
+use CardsGame\Payloads\Files\FilesPayload;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;

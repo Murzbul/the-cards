@@ -1,6 +1,6 @@
 <?php
 
-namespace Digichange\Payloads\Users;
+namespace CardsGame\Payloads\Users;
 
 interface UserUpdatePayload extends UserPayload
 {

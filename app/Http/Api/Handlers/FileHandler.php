@@ -4,7 +4,7 @@ namespace App\Http\Api\Handlers;
 
 use App\Http\Api\Requests\Files\FileUploadRequest;
 use App\Http\Responders\MetadataResponder as Responder;
-use Digichange\Services\Files\FileService;
+use CardsGame\Services\Files\FileService;
 
 class FileHandler extends Handler
 {

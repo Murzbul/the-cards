@@ -2,12 +2,12 @@
 
 namespace Digichange\Services\Users;
 
-use Digichange\Entities\User;
-use Digichange\Payloads\Users\UserCreatePayload;
-use Digichange\Payloads\Users\UserShowPayload;
-use Digichange\Payloads\Users\UserUpdatePayload;
-use Digichange\Repositories\PersistRepository;
-use Digichange\Repositories\UserRepository;
+use CardsGame\Entities\User;
+use CardsGame\Payloads\Users\UserCreatePayload;
+use CardsGame\Payloads\Users\UserShowPayload;
+use CardsGame\Payloads\Users\UserUpdatePayload;
+use CardsGame\Repositories\PersistRepository;
+use CardsGame\Repositories\UserRepository;
 use Doctrine\ORM\Tools\Pagination\Paginator;
 use Lib\Criteria\Contracts\Criteria;
 

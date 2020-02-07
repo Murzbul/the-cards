@@ -2,7 +2,7 @@
 
 namespace App\Infrastructure\Doctrine\Repositories;
 
-use Digichange\Repositories\ReadRepository;
+use CardsGame\Repositories\ReadRepository;
 use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\EntityNotFoundException;
 use Doctrine\ORM\EntityRepository;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Digichange\Payloads\Roles;
+namespace CardsGame\Payloads\Roles;
 
 interface RoleCreatePayload
 {

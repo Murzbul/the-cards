@@ -1,6 +1,6 @@
 <?php
 
-namespace Digichange\Payloads\Files;
+namespace CardsGame\Payloads\Files;
 
 use Illuminate\Http\UploadedFile;
 

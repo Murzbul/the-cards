@@ -1,8 +1,8 @@
 <?php
 
-namespace Digichange\Entities;
+namespace CardsGame\Entities;
 
-use Digichange\Payloads\Roles\RoleUpdatePayload;
+use CardsGame\Payloads\Roles\RoleUpdatePayload;
 use Lib\Contracts\Timestampable as ITimestapable;
 use Lib\Traits\Timestampable;
 use Ramsey\Uuid\Uuid;

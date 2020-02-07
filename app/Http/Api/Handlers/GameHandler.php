@@ -2,28 +2,28 @@
 
 namespace App\Http\Api\Handlers;
 
-use App\Http\Api\Requests\Items\ItemCreateRequest;
-use App\Http\Api\Requests\Items\ItemListRequest;
-use App\Http\Api\Requests\Items\ItemShowRequest;
-use App\Http\Api\Requests\Items\ItemUpdateRequest;
+use App\Http\Api\Requests\Games\GameCreateRequest;
+use App\Http\Api\Requests\Games\GameListRequest;
+use App\Http\Api\Requests\Games\GameShowRequest;
+use App\Http\Api\Requests\Games\GameUpdateRequest;
 use App\Http\Responders\MetadataResponder as Responder;
 use App\Http\Transformers\Items\ItemTransformer;
-use Digichange\Services\Items\ItemService;
+use CardsGame\Services\Games\GameService;
 
-class ItemHandler extends Handler
+class GameHandler extends Handler
 {
     /** @var Responder */
     private $responder;
-    /** @var ItemService */
+    /** @var GameService */
     private $service;
 
-    public function __construct(ItemService $service, Responder $responder)
+    public function __construct(GameService $service, Responder $responder)
     {
         $this->responder = $responder;
         $this->service = $service;
     }
 
-    public function create(ItemCreateRequest $request)
+    public function create(GameCreateRequest $request)
     {
         $request->validate();
 
@@ -32,7 +32,7 @@ class ItemHandler extends Handler
         return $this->responder->success($item, new ItemTransformer())->respond();
     }
 
-    public function list(ItemListRequest $request)
+    public function list(GameListRequest $request)
     {
         $request->validate();
 
@@ -41,7 +41,7 @@ class ItemHandler extends Handler
         return $this->responder->success($items, new ItemTransformer())->paginator(adapt_paginator($items, $request));
     }
 
-    public function update(ItemUpdateRequest $request)
+    public function update(GameUpdateRequest $request)
     {
         $request->validate();
 
@@ -50,7 +50,7 @@ class ItemHandler extends Handler
         return $this->responder->success($item, new ItemTransformer())->respond();
     }
 
-    public function show(ItemShowRequest $request)
+    public function show(GameShowRequest $request)
     {
         $request->validate();
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Digichange\Repositories;
+namespace CardsGame\Repositories;
 
 use Doctrine\Common\Persistence\ObjectRepository;
 use Doctrine\ORM\EntityNotFoundException;

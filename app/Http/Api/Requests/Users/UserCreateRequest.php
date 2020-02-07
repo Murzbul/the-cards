@@ -2,8 +2,8 @@
 
 namespace App\Http\Api\Requests\Users;
 
-use Digichange\Entities\User;
-use Digichange\Payloads\Users\UserCreatePayload;
+use CardsGame\Entities\User;
+use CardsGame\Payloads\Users\UserCreatePayload;
 use Illuminate\Http\Request;
 
 class UserCreateRequest implements UserCreatePayload

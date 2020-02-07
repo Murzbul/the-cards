@@ -2,7 +2,7 @@
 
 namespace App\Infrastructure\Doctrine\Repositories;
 
-use Digichange\Repositories\PersistRepository;
+use CardsGame\Repositories\PersistRepository;
 use Doctrine\ORM\EntityManager;
 
 class DoctrinePersistRepository implements PersistRepository

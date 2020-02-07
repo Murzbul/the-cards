@@ -2,7 +2,7 @@
 
 namespace App\Http\Api\Requests\Files;
 
-use Digichange\Payloads\Files\FilesPayload;
+use CardsGame\Payloads\Files\FilesPayload;
 use Illuminate\Http\Request;
 use Illuminate\Http\UploadedFile;
 

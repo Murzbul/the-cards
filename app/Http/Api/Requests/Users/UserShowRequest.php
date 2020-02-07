@@ -2,9 +2,9 @@
 
 namespace App\Http\Api\Requests\Users;
 
-use Digichange\Entities\User;
-use Digichange\Payloads\Users\UserShowPayload;
-use Digichange\Repositories\UserRepository;
+use CardsGame\Entities\User;
+use CardsGame\Payloads\Users\UserShowPayload;
+use CardsGame\Repositories\UserRepository;
 use Illuminate\Http\Request;
 use Lib\Validators\UuidValidator;
 

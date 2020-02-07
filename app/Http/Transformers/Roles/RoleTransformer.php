@@ -3,7 +3,7 @@
 namespace App\Http\Transformers\Roles;
 
 use App\Http\Transformers\Defaults\TimestampableTransformer;
-use Digichange\Entities\Role;
+use CardsGame\Entities\Role;
 use Flugg\Responder\Transformers\Transformer;
 
 class RoleTransformer extends Transformer

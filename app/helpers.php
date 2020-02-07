@@ -21,6 +21,16 @@ if (! function_exists('array_convert_nulls_to_empty')) {
     }
 }
 
+if (! function_exists('random_number')) {
+    /**
+     * Get Random number.
+     */
+    function random_number(int $min = 1, int $max = 10): int
+    {
+        return rand ( $min, $max );
+    }
+}
+
 if (! function_exists('adapt_paginator')) {
     /**
      * Generate paginator compatible with Fractal.

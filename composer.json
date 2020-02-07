@@ -1,11 +1,10 @@
 {
-    "name": "digichange/laravel",
+    "name": "nathan/gameCard",
     "type": "project",
-    "description": "The Digichange Laravel Framework.",
+    "description": "The Game Card Laravel.",
     "keywords": [
         "framework",
-        "laravel",
-        "digichange"
+        "laravel"
     ],
     "license": "MIT",
     "require": {
@@ -28,7 +27,6 @@
         "laravel/tinker": "^1.0",
         "laravelcollective/html": "^5.8",
         "league/flysystem-aws-s3-v3": "^1.0",
-        "litvinjuan/ethereum-validator": "0.0.1",
         "predis/predis": "^1.1",
         "sentry/sentry": "^2.0",
         "sentry/sentry-laravel": "1.4.1",

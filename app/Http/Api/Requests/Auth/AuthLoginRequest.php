@@ -2,7 +2,7 @@
 
 namespace App\Http\Api\Requests\Auth;
 
-use Digichange\Payloads\Auth\AuthLoginPayload;
+use CardsGame\Payloads\Auth\AuthLoginPayload;
 use Illuminate\Http\Request;
 
 class AuthLoginRequest implements AuthLoginPayload

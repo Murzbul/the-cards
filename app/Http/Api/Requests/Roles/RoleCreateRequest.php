@@ -2,7 +2,7 @@
 
 namespace App\Http\Api\Requests\Roles;
 
-use Digichange\Payloads\Roles\RoleCreatePayload;
+use CardsGame\Payloads\Roles\RoleCreatePayload;
 use Illuminate\Http\Request;
 
 class RoleCreateRequest implements RoleCreatePayload

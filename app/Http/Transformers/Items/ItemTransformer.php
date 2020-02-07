@@ -2,7 +2,7 @@
 
 namespace App\Http\Transformers\Items;
 
-use Digichange\Entities\Item;
+use CardsGame\Entities\Item;
 use Flugg\Responder\Transformers\Transformer;
 
 class ItemTransformer extends Transformer

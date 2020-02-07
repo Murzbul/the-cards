@@ -1,8 +1,8 @@
 <?php
 
-namespace Digichange\Repositories;
+namespace CardsGame\Repositories;
 
-use Digichange\Entities\User;
+use CardsGame\Entities\User;
 use Lib\Criteria\Contracts\Criteria;
 
 interface UserRepository extends ReadRepository

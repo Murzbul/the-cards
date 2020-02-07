@@ -1,9 +1,9 @@
 <?php
 
-namespace Digichange\Services\Auth;
+namespace CardsGame\Services\Auth;
 
 use App\Http\Api\Requests\Auth\AuthLoginRequest;
-use Digichange\Payloads\Auth\AuthLoginPayload;
+use CardsGame\Payloads\Auth\AuthLoginPayload;
 use Illuminate\Auth\AuthenticationException;
 use Illuminate\Support\Facades\Auth;
 use Lib\Auth\AuthData;

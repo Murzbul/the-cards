@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Http\Api\Requests\Items;
+namespace App\Http\Api\Requests\Games;
 
-use Digichange\Entities\Item;
-use Digichange\Payloads\Items\ItemUpdatePayload;
-use Digichange\Repositories\ItemRepository;
+use CardsGame\Entities\Item;
+use CardsGame\Payloads\Items\ItemShowPayload;
+use CardsGame\Repositories\ItemRepository;
 use Illuminate\Http\Request;
 
-class ItemUpdateRequest implements ItemUpdatePayload
+class GameShowRequest implements ItemShowPayload
 {
     const ID = 'itemId';
     const NAME = 'name';
@@ -25,11 +25,6 @@ class ItemUpdateRequest implements ItemUpdatePayload
         $this->repository = $repository;
     }
 
-    public function name(): string
-    {
-        return $this->request->get(self::NAME);
-    }
-
     public function id(): string
     {
         return $this->request->route()->parameter(self::ID);
@@ -44,8 +39,6 @@ class ItemUpdateRequest implements ItemUpdatePayload
 
     public function validate()
     {
-        return $this->request->validate([
-            static::NAME => 'required|max:20',
-        ]);
+        return $this->request->validate([]);
     }
 }

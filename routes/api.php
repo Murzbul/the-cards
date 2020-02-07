@@ -21,7 +21,6 @@ Route::post('/signup', 'AuthHandler@signUp')->name('AuthHandler@signUp');
 
 Route::middleware(\App\Http\Kernel::API)->group(function(){
     Route::post('/games', 'GameHandler@create')->name('GameHandler@create');
-    Route::get('/games', 'GameHandler@list')->name('GameHandler@list');
     Route::get('/games/{gameId}', 'GameHandler@show')->name('GameHandler@show');
     Route::get('/games/{gameId}/status/{playerId}', 'GameHandler@status')->name('GameHandler@status');
     Route::get('/games/{gameId}/next', 'GameHandler@next')->name('GameHandler@next');

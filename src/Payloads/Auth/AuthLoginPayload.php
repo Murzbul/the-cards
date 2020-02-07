@@ -1,6 +1,6 @@
 <?php
 
-namespace Digichange\Payloads\Auth;
+namespace CardsGame\Payloads\Auth;
 
 interface AuthLoginPayload
 {
