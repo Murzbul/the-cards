@@ -71,7 +71,7 @@ return [
 
          'users' => [
              'driver' => 'doctrine',
-             'model' => Digichange\Entities\User::class,
+             'model' => CardsGame\Entities\User::class,
          ],
     ],
 

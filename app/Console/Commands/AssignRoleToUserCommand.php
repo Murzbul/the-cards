@@ -2,11 +2,11 @@
 
 namespace App\Console\Commands;
 
-use Digichange\Entities\Role;
-use Digichange\Entities\User;
-use Digichange\Repositories\PersistRepository;
-use Digichange\Repositories\RoleRepository;
-use Digichange\Repositories\UserRepository;
+use CardsGame\Entities\Role;
+use CardsGame\Entities\User;
+use CardsGame\Repositories\PersistRepository;
+use CardsGame\Repositories\RoleRepository;
+use CardsGame\Repositories\UserRepository;
 use Illuminate\Console\Command;
 
 class AssignRoleToUserCommand extends Command

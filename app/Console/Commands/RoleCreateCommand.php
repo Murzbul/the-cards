@@ -2,8 +2,8 @@
 
 namespace App\Console\Commands;
 
-use Digichange\Entities\Role;
-use Digichange\Repositories\PersistRepository;
+use CardsGame\Entities\Role;
+use CardsGame\Repositories\PersistRepository;
 use Illuminate\Console\Command;
 
 class RoleCreateCommand extends Command

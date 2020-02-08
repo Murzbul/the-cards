@@ -1,6 +1,6 @@
 <?php
 
-namespace Digichange\Services\Users;
+namespace CardsGame\Services\Users;
 
 use CardsGame\Entities\User;
 use CardsGame\Payloads\Users\UserCreatePayload;

@@ -2,8 +2,8 @@
 
 namespace App\Console\Commands;
 
-use Digichange\Entities\User;
-use Digichange\Repositories\PersistRepository;
+use CardsGame\Entities\User;
+use CardsGame\Repositories\PersistRepository;
 use Illuminate\Console\Command;
 
 class UserCreateCommand extends Command

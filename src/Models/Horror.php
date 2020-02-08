@@ -2,8 +2,8 @@
 
 namespace CardsGame\Models;
 
+use CardsGame\Abstracts\Entity;
 use CardsGame\Contracts\Effect;
-use CardsGame\Contracts\Entity;
 
 class Horror implements Effect
 {

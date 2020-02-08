@@ -2,7 +2,7 @@
 
 namespace CardsGame\Payloads\Roles;
 
-use Digichange\Entities\Role;
+use CardsGame\Entities\Role;
 
 interface RolePayload
 {

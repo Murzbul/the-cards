@@ -2,8 +2,8 @@
 
 namespace App\Http\Middleware;
 
+use CardsGame\Entities\User;
 use Closure;
-use Digichange\Entities\User;
 use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Http\Request;
 
