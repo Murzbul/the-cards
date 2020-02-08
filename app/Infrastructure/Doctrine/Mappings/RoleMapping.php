@@ -2,7 +2,7 @@
 
 namespace App\Infrastructure\Doctrine\Mappings;
 
-use Digichange\Entities\Role;
+use CardsGame\Entities\Role;
 use LaravelDoctrine\Fluent\EntityMapping;
 use LaravelDoctrine\Fluent\Fluent;
 use Lib\Doctrine\Types\UuidType;

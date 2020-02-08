@@ -2,8 +2,8 @@
 
 namespace App\Infrastructure\Doctrine\Mappings;
 
-use Digichange\Entities\Role;
-use Digichange\Entities\User;
+use CardsGame\Entities\Role;
+use CardsGame\Entities\User;
 use LaravelDoctrine\Fluent\EntityMapping;
 use LaravelDoctrine\Fluent\Fluent;
 use Lib\Doctrine\Types\UuidType;

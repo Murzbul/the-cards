@@ -33,7 +33,6 @@ return [
                 'auto_generate' => env('DOCTRINE_PROXY_AUTOGENERATE', false),
             ],
             'mappings' => [
-                App\Infrastructure\Doctrine\Mappings\ItemMapping::class,
                 App\Infrastructure\Doctrine\Mappings\UserMapping::class,
                 App\Infrastructure\Doctrine\Mappings\RoleMapping::class,
             ],

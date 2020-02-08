@@ -12,6 +12,10 @@ npm-debug.log
 yarn-error.log
 cghooks.lock
 .php_cs.cache
+/proxies
+/.idea
+/.idea/*
+/hooks
 
 # Created by https://www.gitignore.io/api/laravel
 # Edit at https://www.gitignore.io/?templates=laravel
