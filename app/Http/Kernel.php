@@ -47,6 +47,8 @@ class Kernel extends HttpKernel
         self::API => [
             'auth:api',
             Authorization::class,
+            \Illuminate\Session\Middleware\StartSession::class,
+            \Illuminate\View\Middleware\ShareErrorsFromSession::class,
         ],
     ];
 

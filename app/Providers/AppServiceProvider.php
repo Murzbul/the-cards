@@ -6,6 +6,8 @@ use App\Infrastructure\Doctrine\Repositories\DoctrinePersistRepository;
 use App\Infrastructure\Doctrine\Repositories\DoctrineReadRepository;
 use App\Infrastructure\Doctrine\Repositories\DoctrineRoleRepository;
 use App\Infrastructure\Doctrine\Repositories\DoctrineUserRepository;
+use App\Infrastructure\Session\Repositories\SessionGameRepository;
+use CardsGame\Repositories\GameRepository;
 use CardsGame\Repositories\PersistRepository;
 use CardsGame\Repositories\ReadRepository;
 use CardsGame\Repositories\RoleRepository;
@@ -29,6 +31,9 @@ class AppServiceProvider extends ServiceProvider
         ReadRepository::class => DoctrineReadRepository::class,
         UserRepository::class => DoctrineUserRepository::class,
         RoleRepository::class => DoctrineRoleRepository::class,
+
+        // Session Repositories
+        GameRepository::class => SessionGameRepository::class,
     ];
 
     /**

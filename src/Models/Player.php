@@ -3,15 +3,14 @@
 namespace CardsGame\Models;
 
 use CardsGame\Abstracts\Entity;
+use CardsGame\ValueObjects\HealthPoint;
+use CardsGame\ValueObjects\HorrorPoint;
+use CardsGame\ValueObjects\ShieldPoint;
 
 class Player extends Entity
 {
-    /** @var string */
-    private $name;
-
-    public function __construct(string $name, HealthPoint $healthPoint, ShieldPoint $shield, array $cards)
+    public function __construct(string $name, HealthPoint $healthPoint, ShieldPoint $shield, HorrorPoint $horror, array $cards)
     {
-        parent::__construct($healthPoint, $shield, $cards);
-        $this->name = $name;
+        parent::__construct($name, $healthPoint, $shield, $horror, $cards);
     }
 }

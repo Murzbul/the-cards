@@ -22,9 +22,9 @@ Route::post('/signup', 'AuthHandler@signUp')->name('AuthHandler@signUp');
 Route::middleware(\App\Http\Kernel::API)->group(function(){
     Route::post('/games', 'GameHandler@create')->name('GameHandler@create');
     Route::get('/games', 'GameHandler@show')->name('GameHandler@show');
-    Route::get('/games/{gameId}/status/{playerId}', 'GameHandler@status')->name('GameHandler@status');
-    Route::get('/games/{gameId}/next', 'GameHandler@next')->name('GameHandler@next');
-    Route::get('/games/{gameId}/cards', 'GameHandler@cards')->name('GameHandler@cards');
+    Route::get('/games/status/{playerId}', 'GameHandler@statusPlayer')->name('GameHandler@statusPlayer');
+    Route::get('/games/next', 'GameHandler@next')->name('GameHandler@next');
+    Route::get('/players/cards', 'GameHandler@getPlayerCards')->name('GameHandler@getPlayerCards');
 
     Route::post('/files/upload', 'FileHandler@upload')->name('FileHandler@upload');
 

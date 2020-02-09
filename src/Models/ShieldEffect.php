@@ -4,18 +4,17 @@ namespace CardsGame\Models;
 
 use CardsGame\Abstracts\Entity;
 use CardsGame\Contracts\Effect;
+use CardsGame\Traits\EffectTrait;
 
-class Shield implements Effect
+class ShieldEffect implements Effect
 {
-    /** @var Effect */
-    private $effect;
+    use EffectTrait;
 
-    public function __construct(Effect $effect)
+    public function __construct()
     {
-        $this->effect = $effect;
     }
 
-    public function execute(Entity $entity)
+    public function execute(?Entity $player1, ?Entity $player2)
     {
         // TODO: Implement execute() method.
         // $entity->appliedShield();

@@ -3,11 +3,14 @@
 namespace CardsGame\Models;
 
 use CardsGame\Abstracts\Entity;
+use CardsGame\ValueObjects\HealthPoint;
+use CardsGame\ValueObjects\HorrorPoint;
+use CardsGame\ValueObjects\ShieldPoint;
 
 class Monster extends Entity
 {
-    public function __construct(HealthPoint $healthPoint, ShieldPoint $shield, array $cards)
+    public function __construct(string $name, HealthPoint $healthPoint, ShieldPoint $shield, HorrorPoint $horror, array $cards)
     {
-        parent::__construct($healthPoint, $shield, $cards);
+        parent::__construct($name, $healthPoint, $shield, $horror, $cards);
     }
 }

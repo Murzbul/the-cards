@@ -15,18 +15,16 @@ class Game
     private $turnsLeft;
     /** @var int */
     private $turnsPast;
-    /** @var Entity */
-    private $player1;
-    /** @var Entity */
-    private $player2;
+    /** @var Entity[] */
+    private $players;
     /** @var bool */
     private $playSolo;
 
     public function __construct(Entity $player1, Entity $player2, int $turnsLeft, bool $playSolo)
     {
         $this->id = Uuid::uuid4();
-        $this->player1 = $player1;
-        $this->player2 = $player2;
+        $this->players[] = $player1;
+        $this->players[] = $player2;
         $this->turnsLeft = $turnsLeft;
         $this->turnsCurrent = 1;
         $this->turnsPast = 0;
@@ -38,14 +36,9 @@ class Game
         return $this->id;
     }
 
-    public function getPlayer1(): Entity
+    public function getPlayers(): array
     {
-        return $this->player1;
-    }
-
-    public function getPlayer2(): Entity
-    {
-        return $this->player2;
+        return $this->players;
     }
 
     public function getTurnsCurrent(): int
