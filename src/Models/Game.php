@@ -19,6 +19,8 @@ class Game
     private $players;
     /** @var bool */
     private $playSolo;
+    /** @var bool */
+    private $playerTurn;
 
     public function __construct(Entity $player1, Entity $player2, int $turnsLeft, bool $playSolo)
     {
@@ -29,6 +31,7 @@ class Game
         $this->turnsCurrent = 1;
         $this->turnsPast = 0;
         $this->playSolo = $playSolo;
+        $this->playerTurn = true; // Set default, player1 always start first
     }
 
     public function getId(): string
@@ -59,6 +62,11 @@ class Game
     public function getPlaySolo(): bool
     {
         return $this->playSolo;
+    }
+
+    public function changePlayerTurn(): void
+    {
+        $this->playerTurn = ! $this->playerTurn;
     }
 
     public function nextTurn(): ?GameEnd

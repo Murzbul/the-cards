@@ -15,21 +15,21 @@ abstract class Entity
     /** @var HealthPoint */
     protected $healthPoint;
     /** @var ShieldPoint */
-    protected $shield;
+    protected $shieldPoint;
     /** @var HorrorPoint */
-    protected $horror;
+    protected $horrorPoint;
     /** @var Card[] */
     protected $cards;
     /** @var Uuid */
     private $id;
 
-    public function __construct(string $name, HealthPoint $healthPoint, ShieldPoint $shield, HorrorPoint $horror, array $cards)
+    public function __construct(string $name, HealthPoint $healthPoint, ShieldPoint $shieldPoint, HorrorPoint $horrorPoint, array $cards)
     {
         $this->id = Uuid::uuid4();
         $this->name = $name;
         $this->healthPoint = $healthPoint;
-        $this->shield = $shield;
-        $this->horror = $horror;
+        $this->shieldPoint = $shieldPoint;
+        $this->horrorPoint = $horrorPoint;
         $this->cards = $cards;
     }
 
@@ -48,13 +48,43 @@ abstract class Entity
         return $this->healthPoint->getValue();
     }
 
+    public function setHealth(HealthPoint $healthPoint)
+    {
+        $this->healthPoint = $healthPoint;
+    }
+
     public function getShield(): int
     {
-        return $this->shield->getValue();
+        return $this->shieldPoint->getValue();
+    }
+
+    public function setShield(ShieldPoint $shieldPoint)
+    {
+        $this->shieldPoint = $shieldPoint;
+    }
+
+    public function getHorror(): int
+    {
+        return $this->shieldPoint->getValue();
+    }
+
+    public function setHorror(HorrorPoint $horrorPoint)
+    {
+        $this->horrorPoint = $horrorPoint;
     }
 
     public function getCards(): array
     {
+        return $this->cards;
+    }
+
+    public function removeCard(string $id): array
+    {
+        $this->cards = collect($this->cards)->filter(function ($card) use ($id) {
+            /* @var Card $card */
+            return $card->getId() !== $id;
+        })->values()->toArray();
+
         return $this->cards;
     }
 }

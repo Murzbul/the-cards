@@ -14,7 +14,7 @@ class ShieldEffect implements Effect
     {
     }
 
-    public function execute(?Entity $player1, ?Entity $player2)
+    public function execute(Entity $executor, ?Entity $player1, ?Entity $player2)
     {
         // TODO: Implement execute() method.
         // $entity->appliedShield();

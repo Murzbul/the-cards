@@ -31,7 +31,6 @@ class SessionGameRepository implements GameRepository
     {
         /** @var Game $game */
         $game = Session::get(static::CURRENT);
-
         $entity = collect($game->getPlayers())->first(function (Entity $entity) use ($id) {
             return $entity->getId() === $id;
         });

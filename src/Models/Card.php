@@ -19,14 +19,14 @@ class Card
         $this->effect = $effect;
     }
 
-    public function handle(?Entity $player1, ?Entity $player2)
+    public function handle(Entity $executor, ?Entity $player1, ?Entity $player2)
     {
-        $this->effect->execute($player1, $player2);
+        $this->effect->execute($executor, $player1, $player2);
     }
 
     public function getId()
     {
-        return $this->id;
+        return $this->id->toString();
     }
 
     public function getEffect(): Effect

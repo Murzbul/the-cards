@@ -5,9 +5,12 @@ namespace CardsGame\Services\Games;
 use CardsGame\Abstracts\Entity;
 use CardsGame\Factories\GenerateCards;
 use CardsGame\Models\Game;
+use CardsGame\Models\Player;
 use CardsGame\Payloads\Games\GameCreatePayload;
 use CardsGame\Payloads\Games\GameEntityStatusPayload;
+use CardsGame\Payloads\Games\GameUseCardPayload;
 use CardsGame\Repositories\GameRepository;
+use CardsGame\Services\Cards\CardService;
 use CardsGame\Services\Entities\EntityService;
 
 class GameService
@@ -18,13 +21,17 @@ class GameService
     private $entityService;
     /** @var GenerateCards */
     private $generateCards;
+    /** @var CardService */
+    private $cardService;
 
     public function __construct(GameRepository $repository,
-                                EntityService $entityService
+                                EntityService $entityService,
+                                CardService $cardService
     ) {
         $this->repository = $repository;
         $this->entityService = $entityService;
         $this->generateCards = new GenerateCards(4);
+        $this->cardService = $cardService;
     }
 
     public function create(GameCreatePayload $payload): Game
@@ -63,5 +70,29 @@ class GameService
         $cards = $this->repository->getPlayerCards();
 
         return $cards;
+    }
+
+    public function useCard(GameUseCardPayload $payload): Game
+    {
+        $cardId = $payload->cardId();
+        $executor = $payload->executor();
+
+        /** @var Game $game */
+        $game = $this->repository->getCurrentGame();
+
+        /** @var Player $player1 */
+        $player1 = collect($game->getPlayers())->first();
+        /** @var Player $player2 */
+        $player2 = collect($game->getPlayers())->last();
+
+        $card = $this->cardService->getEntityCard($player1, $cardId);
+
+        $card->handle($executor, $player1, $player2);
+
+        $executor->removeCard($cardId);
+
+        $this->repository->save($game);
+
+        return $game;
     }
 }

@@ -25,6 +25,7 @@ Route::middleware(\App\Http\Kernel::API)->group(function(){
     Route::get('/games/status/{playerId}', 'GameHandler@statusPlayer')->name('GameHandler@statusPlayer');
     Route::get('/games/next', 'GameHandler@next')->name('GameHandler@next');
     Route::get('/players/cards', 'GameHandler@getPlayerCards')->name('GameHandler@getPlayerCards');
+    Route::post('/games/cards/{entityId}', 'GameHandler@useCard')->name('GameHandler@useCard');
 
     Route::post('/files/upload', 'FileHandler@upload')->name('FileHandler@upload');
 

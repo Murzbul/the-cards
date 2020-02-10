@@ -4,6 +4,7 @@ namespace App\Http\Api\Handlers;
 
 use App\Http\Api\Requests\Games\GameCreateRequest;
 use App\Http\Api\Requests\Games\GamePlayerStatusRequest;
+use App\Http\Api\Requests\Games\GameUseCardRequest;
 use App\Http\Responders\MetadataResponder as Responder;
 use App\Http\Transformers\Entities\EntityTransformer;
 use App\Http\Transformers\Games\CardTransformer;
@@ -51,5 +52,14 @@ class GameHandler extends Handler
         $cards = $this->service->getPlayerCards();
 
         return $this->responder->success($cards, new CardTransformer())->respond();
+    }
+
+    public function useCard(GameUseCardRequest $request)
+    {
+        $request->validate();
+
+        $game = $this->service->useCard($request);
+
+        return $this->responder->success($game, new GameTransformer())->respond();
     }
 }
