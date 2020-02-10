@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Artisan;
 
 class Start extends Command
 {
-    protected $signature = 'digichange:start';
+    protected $signature = 'cards:start';
     protected $description = 'Started command project';
 
     public function handle()
@@ -27,19 +27,19 @@ class Start extends Command
         $this->info(Artisan::output());
 
         $this->warn('Create Admin Role');
-        Artisan::call('blog:role:create Admin');
+        Artisan::call('card:role:create Admin');
         $this->info(Artisan::output());
 
         $this->warn('Create Admin Role');
-        Artisan::call('blog:role:create Editor');
+        Artisan::call('card:role:create Editor');
         $this->info(Artisan::output());
 
         $this->warn('Create Admin User');
-        Artisan::call('blog:user:create admin@blog.com --password=123456 --name=admin');
+        Artisan::call('card:user:create admin@cards.com --password=123456 --name=admin');
         $this->info(Artisan::output());
 
         $this->warn('Assign role to a user');
-        Artisan::call('blog:assign:role:to:user admin@blog.com admin');
+        Artisan::call('card:assign:role:to:user admin@cards.com admin');
         $this->info(Artisan::output());
 
         $this->info('For additional configurations (Sentry, AWS), check the readme file');

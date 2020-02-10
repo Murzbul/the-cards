@@ -8,7 +8,7 @@ use Illuminate\Console\Command;
 
 class RoleCreateCommand extends Command
 {
-    protected $signature = 'blog:role:create
+    protected $signature = 'card:role:create
                                 {name : The role\'s name}
                                 {--slug= : The role\'s slug.}';
 

@@ -11,7 +11,7 @@ use Illuminate\Console\Command;
 
 class AssignRoleToUserCommand extends Command
 {
-    protected $signature = 'blog:assign:role:to:user
+    protected $signature = 'card:assign:role:to:user
                                 {email : The user\'s email}
                                 {role : The role\'s slug.}';
 

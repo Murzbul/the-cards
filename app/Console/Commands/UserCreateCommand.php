@@ -8,7 +8,7 @@ use Illuminate\Console\Command;
 
 class UserCreateCommand extends Command
 {
-    protected $signature = 'blog:user:create
+    protected $signature = 'card:user:create
                                 {email : The user\'s email}
                                 {--password= : The user\'s password.}
                                 {--name= : The user\'s name.}';
