@@ -19,7 +19,7 @@ class HorrorPoint implements Attribute
         return $this->status;
     }
 
-    public function setValue(bool $status)
+    public function setValue($status)
     {
         $this->status = $status;
     }

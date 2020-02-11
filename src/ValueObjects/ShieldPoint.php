@@ -9,9 +9,9 @@ class ShieldPoint implements Attribute
     /** @var int */
     private $point;
 
-    public function __construct()
+    public function __construct(int $point = null)
     {
-        $this->point = random_number();
+        $this->point = $point ? $point : random_number();
     }
 
     public function getValue()
@@ -19,7 +19,7 @@ class ShieldPoint implements Attribute
         return $this->point;
     }
 
-    public function setValue(int $point)
+    public function setValue($point)
     {
         $this->point = $point;
     }

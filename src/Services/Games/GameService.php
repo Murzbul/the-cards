@@ -74,22 +74,27 @@ class GameService
 
     public function useCard(GameUseCardPayload $payload): Game
     {
-        $cardId = $payload->cardId();
-        $executor = $payload->executor();
-
         /** @var Game $game */
-        $game = $this->repository->getCurrentGame();
+        $game = $payload->game();
+        $cardId = $payload->cardId();
+        $player1 = $payload->executor();
 
-        /** @var Player $player1 */
-        $player1 = collect($game->getPlayers())->first();
-        /** @var Player $player2 */
-        $player2 = collect($game->getPlayers())->last();
+        $player2 = collect($game->getPlayers())->filter(function ($player) use ($player1) {
+            /* @var Player $player */
+            return $player->getId() !== $player1->getId();
+        })->first();
 
         $card = $this->cardService->getEntityCard($player1, $cardId);
 
-        $card->handle($executor, $player1, $player2);
+        $card->handle($player1, $player2, $game);
 
-        $executor->removeCard($cardId);
+        $player1->removeCard($cardId);
+
+        $entity = $game->getEntityWithNoHealth();
+
+        if ($entity) {
+            throw new \Exception('Game Over');
+        }
 
         $this->repository->save($game);
 

@@ -21,6 +21,8 @@ class Game
     private $playSolo;
     /** @var bool */
     private $playerTurn;
+    /** @var Entity */
+    private $lostTurn;
 
     public function __construct(Entity $player1, Entity $player2, int $turnsLeft, bool $playSolo)
     {
@@ -32,6 +34,7 @@ class Game
         $this->turnsPast = 0;
         $this->playSolo = $playSolo;
         $this->playerTurn = true; // Set default, player1 always start first
+        $this->lostTurn = null;
     }
 
     public function getId(): string
@@ -64,6 +67,16 @@ class Game
         return $this->playSolo;
     }
 
+    public function setLostTurn(Entity $lostTurn)
+    {
+        $this->lostTurn = $lostTurn;
+    }
+
+    public function getLostTurn()
+    {
+        return $this->lostTurn;
+    }
+
     public function changePlayerTurn(): void
     {
         $this->playerTurn = ! $this->playerTurn;
@@ -80,5 +93,15 @@ class Game
         }
 
         return null;
+    }
+
+    public function getEntityWithNoHealth(): ?Entity
+    {
+        $entity = collect($this->players)->filter(function ($player) {
+            /* @var Entity $player */
+            return $player->getHealth() === 0;
+        })->first();
+
+        return $entity;
     }
 }

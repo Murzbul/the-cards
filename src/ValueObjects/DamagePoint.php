@@ -19,7 +19,7 @@ class DamagePoint implements Attribute
         return $this->point;
     }
 
-    public function setValue(int $point)
+    public function setValue($point)
     {
         $this->point = $point;
     }

@@ -12,6 +12,7 @@ class CardTransformer extends Transformer
         return array_convert_nulls_to_empty([
             'id' => $card->getId(),
             'name' => $card->getEffect()->getName(),
+            'value' => $card->getEffect()->getValue()->getValue(),
         ]);
     }
 }

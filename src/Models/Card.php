@@ -19,9 +19,9 @@ class Card
         $this->effect = $effect;
     }
 
-    public function handle(Entity $executor, ?Entity $player1, ?Entity $player2)
+    public function handle(?Entity $player1, ?Entity $player2, Game $game)
     {
-        $this->effect->execute($executor, $player1, $player2);
+        $this->effect->execute($player1, $player2, $game);
     }
 
     public function getId()

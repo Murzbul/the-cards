@@ -3,6 +3,7 @@
 namespace App\Http\Api\Requests\Games;
 
 use CardsGame\Abstracts\Entity;
+use CardsGame\Models\Game;
 use CardsGame\Payloads\Games\GameUseCardPayload;
 use CardsGame\Repositories\GameRepository;
 use Illuminate\Http\Request;
@@ -36,6 +37,13 @@ class GameUseCardRequest implements GameUseCardPayload
         $entity = $this->repository->getPlayerFromCurrentGame($this->entityId);
 
         return $entity;
+    }
+
+    public function game(): Game
+    {
+        $game = $this->repository->getCurrentGame();
+
+        return $game;
     }
 
     public function validate()
